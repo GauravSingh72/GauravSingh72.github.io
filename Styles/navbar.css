@@ -695,3 +695,8 @@ footer span a:hover {
     flex-direction: column-reverse;
   }
 }
+
+#resumeDownloadBtn {
+  background: transparent;
+  border: none;
+}
