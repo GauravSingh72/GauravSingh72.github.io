@@ -196,7 +196,7 @@ section .title::after {
   filter: brightness(90%);
 }
 /* home section styling */
-.home {
+.homeCss {
   display: flex;
   background: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGFyayUyMGJhY2tncm91bmQlMjBtaW5pbWFsaXN0aWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60")
     no-repeat center;
@@ -207,30 +207,30 @@ section .title::after {
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
-.home .max-width {
+.homeCss .max-width {
   width: 100%;
   display: flex;
 }
-.home .max-width .row {
+.homeCss .max-width .row {
   margin-right: 0;
 }
-.home .home-content .text-1 {
+.homeCss .home-content .text-1 {
   font-size: 27px;
 }
-.home .home-content .text-2 {
+.homeCss .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
-.home .home-content .text-3 {
+.homeCss .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
-.home .home-content .text-3 span {
+.homeCss .home-content .text-3 span {
   color: rgb(221, 88, 114);
   font-weight: 500;
 }
-.home .home-content a {
+.homeCss .home-content a {
   display: inline-block;
   background: rgb(221, 88, 114);
   color: #fff;
@@ -243,7 +243,7 @@ section .title::after {
   border: 2px solid rgb(221, 88, 114);
   transition: all 0.3s ease;
 }
-.home .home-content a:hover {
+.homeCss .home-content a:hover {
   color: rgb(221, 88, 114);
   background: none;
 }
@@ -688,13 +688,13 @@ footer span a:hover {
     margin: 20px 0;
     font-size: 25px;
   }
-  .home .home-content .text-2 {
+  .homeCss .home-content .text-2 {
     font-size: 70px;
   }
-  .home .home-content .text-3 {
+  .homeCss .home-content .text-3 {
     font-size: 35px;
   }
-  .home .home-content a {
+  .homeCss .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
@@ -726,13 +726,13 @@ footer span a:hover {
   .max-width {
     padding: 0 23px;
   }
-  .home .home-content .text-2 {
+  .homeCss .home-content .text-2 {
     font-size: 60px;
   }
-  .home .home-content .text-3 {
+  .homeCss .home-content .text-3 {
     font-size: 32px;
   }
-  .home .home-content a {
+  .homeCss .home-content a {
     font-size: 20px;
   }
   .services .serv-content .card {
@@ -740,10 +740,10 @@ footer span a:hover {
   }
 }
 @media (max-width: 500px) {
-  .home .home-content .text-2 {
+  .homeCss .home-content .text-2 {
     font-size: 50px;
   }
-  .home .home-content .text-3 {
+  .homeCss .home-content .text-3 {
     font-size: 27px;
   }
   .about .about-content .right .text,
