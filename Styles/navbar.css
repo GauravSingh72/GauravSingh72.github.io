@@ -594,14 +594,18 @@ footer span a:hover {
 
 #gitHubContent {
   text-align: center;
-  display: flex;
+  display: grid;
   margin: 30px 10px 50px 10px;
   gap: 10px;
 }
 
 #gitHubContent > img {
-  width: 100%;
-  height: 100%;
+  width: 45%;
+  margin: auto;
+}
+
+#gitHubContent > .react-activity-calendar {
+  width: 80%;
 }
 
 /* responsive media query start */
