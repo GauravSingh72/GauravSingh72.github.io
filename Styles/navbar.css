@@ -131,6 +131,43 @@ section .title::after {
   cursor: pointer;
   display: none;
 }
+/* .nav-link home {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-link about {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+.nav-link skills {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+.nav-link projects {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+.nav-link contact {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+.nav-link resume {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+} */
 .scroll-up-btn {
   position: fixed;
   height: 45px;
@@ -584,9 +621,51 @@ footer span a:hover {
     display: block;
     z-index: 999;
   }
+  /* .nav-link home {
+    display: block;
+    z-index: 999;
+  }
+  .nav-link about {
+    display: block;
+    z-index: 999;
+  }
+  .nav-link skills {
+    display: block;
+    z-index: 999;
+  }
+  .nav-link projects {
+    display: block;
+    z-index: 999;
+  }
+  .nav-link contact {
+    display: block;
+    z-index: 999;
+  }
+  .nav-link resume {
+    display: block;
+    z-index: 999;
+  } */
   .menu-btn i.active:before {
     content: "\f00d";
   }
+  /* .nav-link home i.active:before {
+    content: "\f00d";
+  }
+  .nav-link about i.active:before {
+    content: "\f00d";
+  }
+  .nav-link skills i.active:before {
+    content: "\f00d";
+  }
+  .nav-link projects i.active:before {
+    content: "\f00d";
+  }
+  .nav-link contact i.active:before {
+    content: "\f00d";
+  }
+  .nav-link resume i.active:before {
+    content: "\f00d";
+  } */
   .navbar .menu {
     position: fixed;
     height: 100vh;
