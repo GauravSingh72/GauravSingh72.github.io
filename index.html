@@ -26,6 +26,7 @@
    rel="stylesheet"
    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 />
+<link rel="stylesheet" href="./Styles/cal.css">
   </head>
   <body>
     <div class="scroll-up-btn">
@@ -112,7 +113,7 @@
               actively seeking to expand his knowledge and skills through
               professional development opportunities.
             </p>
-            <button id="resume-button-2" style="background: transparent; border:0px">
+            <button id="downloadBtn" id="resume-button-2" style="background: transparent; border:0px">
               <a 
               id="resume-link-2"
               href="https://drive.google.com/uc?export=download&id=1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd"
@@ -186,7 +187,9 @@
     <div id="gitHub">
       <h1 class="title">GitHub Statistics</h1>
       <div id="gitHubContent">
-        <img class="react-activity-calendar" src="./Images/gitHub-Calender.png" alt="">
+        <div class="calendar react-activity-calendar">
+          <img style="height: 100%; width:100%" src="./Images/gitHub-Calender.png" alt="">
+        </div>
         <img
           id="github-top-langs"
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=GauravSingh72&theme=dark&layout=compact"
@@ -217,7 +220,7 @@
               />
               <div class="project-title">Zara</div>
               <p class="project-description">Spanish Multi-National retail clothing chain.</p>
-              <p class="project-tech-stack" style="margin-top: 5px;"><b style="color: rgb(86, 86, 228)">Tech Stack :</b> HTML | CSS | JS</p>
+              <p class="project-tech-stack"  style="margin-top: 5px;"><b style="color: rgb(86, 86, 228)">Tech Stack :</b> HTML | CSS | JS</p>
               <div style="display: flex; margin-top: 10px; align-items: center; font-size: larger; gap: 20px;">
               <div class="project-github-link">
               <a style="color: rgb(86, 86, 228);" class="fa fa-github" href="https://github.com/Jimmy-Sharma/beneficial-jelly-4258" target="_blank"></a>
@@ -230,19 +233,19 @@
             <div class="project-card">
                 <img
                   style="padding: 10px;"
-                  src="./Images/BedBathSnapshot.png"
+                  src="./Images/DailyObjectSnapshot.png"
                   alt=""
                 />
-              <div class="project-title">BedBath&Beyond</div>
+              <div class="project-title">Brands Hub</div>
               <p class="project-description">
-                It is an American chain of domestic merchandise retail stores.
+                An e-commerce website deals with items such as phones, laptops and wallets. 
               </p>
-              <p class="project-tech-stack" style="margin-top: 5px;"><b style="color: rgb(86, 86, 228)">Tech Stack :</b> HTML | CSS | JS</p>
+              <p class="project-tech-stack" style="margin-top: 5px;"><b style="color: rgb(86, 86, 228)">Tech Stack :</b> React | HTML | JS</p>
               <div style="display: flex; margin-top: 10px; align-items: center; font-size: larger; gap: 20px;">
                 <div class="project-github-link">
-                <a style="color: rgb(86, 86, 228);" class="fa fa-github" href="https://github.com/GauravSingh72/aggressive-fire-8459" target="_blank"></a>
+                <a style="color: rgb(86, 86, 228);" class="fa fa-github" href="https://github.com/amit9675/worthy-marble-5256" target="_blank"></a>
                 </div>
-                <div class="project-deployed-link"><a style="color: rgb(86, 86, 228);" class="fa fa-chain" href="https://curious-maamoul-9172dc.netlify.app/index.html" target="_blank"></a></div>
+                <div class="project-deployed-link"><a style="color: rgb(86, 86, 228);" class="fa fa-chain" href="https://worthy-marble-5256.vercel.app/" target="_blank"></a></div>
               </div>
             </div>
           </div>
@@ -392,7 +395,21 @@
         All rights reserved.</span
       >
     </footer>
-<script src="./Scripts/index.js"></script>
-<script src="./Scripts/Navbar.js"></script>
+<script>
+  GitHubCalendar(".calendar", "GauravSingh72");
+  GitHubCalendar(".calendar", "GauravSingh72", {
+    proxy(username) {
+      return fetch(`https://your-proxy.com/github?user=${username}`);
+    },
+  })
+    .then((r) => r.text())
+    .catch((err) => {
+      console.log(err)
+    })
+</script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   </body>
 </html>
+<script src="./Scripts/index.js"></script>
+<script src="./Scripts/Navbar.js"></script>
+<script src="./Scripts/cal.js"></script>

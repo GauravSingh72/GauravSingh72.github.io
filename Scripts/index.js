@@ -7,10 +7,19 @@ btn1.addEventListener("click", function () {
   );
 });
 
-const btn2 = document.getElementById("resume-button-2");
+const btn2 = document.getElementById("downloadBtn");
 btn2.addEventListener("click", function () {
   window.open(
     "https://drive.google.com/file/d/1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd/view?usp=share_link",
     "_blank"
   );
 });
+
+// const btn2 = document.getElementsByClassName("downloadBtn");
+// btn2.addEventListener("click", function () {
+//   window.open(
+//     "https://drive.google.com/file/d/1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd/view?usp=share_link",
+//     "_blank"
+//   );
+//   console.log("DOwnload")
+// });
