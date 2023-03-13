@@ -1,25 +1,8 @@
-
-const btn1 = document.getElementById("resume-button-1");
-btn1.addEventListener("click", function () {
+const btn1 = document.getElementById("resume-link-2")
+function myFunction() {
   window.open(
-    "https://drive.google.com/file/d/1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd/view?usp=share_link",
-    "_blank"
-  );
-});
+    "https://drive.google.com/file/d/1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd/view?usp=share_link"
+  )
+}
 
-const btn2 = document.getElementById("downloadBtn");
-btn2.addEventListener("click", function () {
-  window.open(
-    "https://drive.google.com/file/d/1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd/view?usp=share_link",
-    "_blank"
-  );
-});
 
-// const btn2 = document.getElementsByClassName("downloadBtn");
-// btn2.addEventListener("click", function () {
-//   window.open(
-//     "https://drive.google.com/file/d/1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd/view?usp=share_link",
-//     "_blank"
-//   );
-//   console.log("DOwnload")
-// });
