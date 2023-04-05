@@ -12,9 +12,9 @@ function myFunction2() {
   )
 }
 
-const btn3 = document.getElementById("resume-link-2")
-function myFunction3() {
-  window.open(
-    "https://drive.google.com/file/d/1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd/view?usp=share_link"
-  )
-}
+// const btn3 = document.getElementById("resume-link-2")
+// function myFunction3() {
+//   window.open(
+//     "https://drive.google.com/file/d/1IaDqlnbpasqpYKWgKCiefdHVKkEduFNd/view?usp=share_link"
+//   )
+// }
